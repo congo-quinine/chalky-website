@@ -1,0 +1,37 @@
+.release-page-wrappper {
+  background-color: #000000;
+}
+.release-page-title{
+  color: #e0e2e5;
+  text-align: center;
+  padding-top: 5%;
+}
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.albums > div {
+  color: #e0e2e5;
+  width: 25%;
+  margin: 10%;
+  margin-top: 7%;
+  text-align: center;
+  line-height: 15px;
+  font-size: 16px;
+}
+
+.image {
+  width: 100%;
+}
+
+.date-line{
+  color: #9d9da0;
+}
+
+iframe {
+   width: 110%;
+   height: 300px;
+}
