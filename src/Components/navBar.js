@@ -8,7 +8,7 @@ class NavBar extends Component {
         <div className='nav-bar'>
           <section className='nav-image'>
               <div>
-                <a href='#bio-text'><h6>Chalky</h6></a>
+                <a href='#bio-text'><h5>Chalky</h5></a>
               </div>
             </section>
             <section className='home-nav'>
