@@ -10,6 +10,7 @@
 
 @media only screen and (max-width: 600px) {
   .title-image {
-    height: 600px;
+    width: 100%;
+    height: 500px;
   }
 }
