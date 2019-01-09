@@ -1,3 +1,8 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 600px) {
+  
+}
+
 /* The sidebar menu */
 .sidenav {
   height: ; /* Full-height: remove this if you want "auto" height */

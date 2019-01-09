@@ -23,7 +23,7 @@ class NavBar extends Component {
             </section>
             <section className='bio-nav'>
               <div>
-                <h6>Shop</h6>
+                <h6>Merch</h6>
               </div>
             </section>
             <section className='shop-nav'>

@@ -10,17 +10,18 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 .albums > div {
-  color: #e0e2e5;
-  width: 25%;
+  max-width: 28%;
   margin: 10%;
   margin-top: 7%;
-  text-align: center;
+  text-align: left;
   line-height: 15px;
-  font-size: 16px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: #e0e2e5;
 }
 
 .image {
@@ -34,4 +35,22 @@
 iframe {
    width: 110%;
    height: 300px;
+}
+p {
+  width: 110%;
+  padding-left: 0%;
+  letter-spacing: 0.5px;
+}
+h2{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .albums > div {max-width: 50%;
+    padding-left: 10%;
+  }
+  h2{
+    padding-left: 8%;
+    text-align: center;
+  }
 }
