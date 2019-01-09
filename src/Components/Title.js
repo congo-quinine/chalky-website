@@ -31,6 +31,7 @@ class Title extends Component {
   render(){
     return (
         <div id='title-page' className='title-page'>
+        <div id='mobile-banner'>Chalky</div>
           <img className='title-image' src={pictureArray[pictureCounter]}/>
         </div>
       );
