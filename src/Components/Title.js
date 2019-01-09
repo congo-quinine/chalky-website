@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import '../Styles/Title.css'
 
-const pictureArray = ['.../IMG_4607.JPG', '../IMG_4608.JPG', '../IMG_4609.JPG','../IMG_4610.JPG','../IMG_4611.JPG','../IMG_4612.JPG', '../IMG_4613.JPG', '../IMG_4614.JPG','../IMG_4615.JPG','../IMG_4616.JPG','../IMG_4617.JPG','../IMG_4618.JPG','../IMG_4619.JPG','../IMG_4622.JPG','../IMG_4623.JPG','../IMG_4624.JPG','../IMG_4625.JPG','../IMG_4626.JPG','../IMG_4627.JPG','../IMG_4628.JPG','../IMG_4629.JPG','../IMG_4630.JPG','../IMG_4631.JPG','../IMG_4632.JPG','../IMG_4633.JPG','../IMG_4634.JPG','../IMG_4635.JPG','../IMG_4636.JPG','../IMG_4637.JPG','../IMG_4638.JPG','../IMG_4638.JPG','../IMG_4640.JPG','../IMG_4641.JPG','../IMG_4643.JPG','../IMG_4644.JPG','../IMG_4645.JPG','../IMG_4648.JPG','../IMG_4649.JPG','../IMG_4650.JPG','../IMG_4651.JPG','../IMG_4652.JPG','../IMG_4653.JPG','../IMG_4654.JPG','../IMG_4654.JPG','../IMG_4654.JPG']
+const pictureArray = ['.../img_4607.jpg', '../img_4608.jpg', '../img_4609.jpg','../img_4610.jpg','../img_4611.jpg','../img_4612.jpg', '../img_4613.jpg', '../img_4614.jpg','../img_4615.jpg','../img_4616.jpg','../img_4617.jpg','../img_4618.jpg','../img_4619.jpg','../img_4622.jpg','../img_4623.jpg','../img_4624.jpg','../img_4625.jpg','../img_4626.jpg','../img_4627.jpg','../img_4628.jpg','../img_4629.jpg','../img_4630.jpg','../img_4631.jpg','../img_4632.jpg','../img_4633.jpg','../img_4634.jpg','../img_4635.jpg','../img_4636.jpg','../img_4637.jpg','../img_4638.jpg','../img_4638.jpg','../img_4640.jpg','../img_4641.jpg','../img_4643.jpg','../img_4644.jpg','../img_4645.jpg','../img_4648.jpg']
 
-let counter = 0;
+let pictureCounter = 0;
 
 class Title extends Component {
 
   constructor(props) {
     super(props)
       this.state = {
-        counter: 0
+        pictureCounter: 0
       }
     }
 
 
   handelChange = () => {
-    this.setState({counter})
-    if(this.state.counter >= pictureArray.length-1) {
-       counter = 0
+    this.setState({pictureCounter})
+    if(this.state.pictureCounter >= pictureArray.length-1) {
+       pictureCounter = 0
      }
-     counter++
+     pictureCounter++
   }
 
 
@@ -31,7 +31,7 @@ class Title extends Component {
   render(){
     return (
         <div id='title-page' className='title-page'>
-          <img className='title-image' src={pictureArray[counter]}/>
+          <img className='title-image' src={pictureArray[pictureCounter]}/>
         </div>
       );
     }
