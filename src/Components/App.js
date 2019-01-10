@@ -16,7 +16,6 @@ class App extends Component {
         leftHomePage: false
       }
     }
-
     handleNavBarHide = () => {
       this.setState({
         leftHomePage: true
@@ -27,19 +26,18 @@ class App extends Component {
         leftHomePage: false
       })
     }
-
   render() {
     return (
       <div className="App">
         {
           this.state.leftHomePage
-          ? <SideBarNav/>
-          :<NavBar />
+          ? <SideBarNav />
+          : <NavBar />
         }
         <Title handleNavBarShow={this.handleNavBarShow}/>
         <Releases handleNavBarHide={this.handleNavBarHide}/>
         <SideBar />
-        <Bio />
+        <Bio handleNavBarHide={this.handleNavBarHide}/>
       </div>
     );
   }

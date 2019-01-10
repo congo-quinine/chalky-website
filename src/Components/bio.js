@@ -5,11 +5,11 @@ class Bio extends Component {
 
     render(){
       return (
-        <div>
+        <div onPointerEnter={ ()=> this.props.handleNavBarHide()}>
         <div className='bio-picture-title'>
           <h4>Chalky White (UK)</h4>
             <img id='bio-picture' src='../Chalky.jpg'></img>
-          </div>  
+          </div>
             <div id='bio-text'>
               <p>
               Chalky White is a truly unique beat maker, guitarist and composer hailing from the South West of the UK. Having played in a broad spectrum of ensembles from a young age from Punk to Jazz, Hip-Hop to Post-Rock, he pulls all of these influences together to create music that stands up as fresh and innovative in an otherwise oversaturated musical landscape.
