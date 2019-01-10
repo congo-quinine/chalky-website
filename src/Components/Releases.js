@@ -4,9 +4,11 @@ import '../Styles/releasePage.css'
 
 class Releases extends Component {
 
+
+
     render(){
       return (
-          <div className='release-page-wrappper'>
+          <div onPointerEnter={ ()=> this.props.handleNavBarHide()} className='release-page-wrappper'>
             <div className='release-page-title'>
               <h1 id='release-page-link'>-Freshest Beats-</h1>
             </div>

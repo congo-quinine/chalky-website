@@ -27,13 +27,13 @@
   color: #f1f1f1;
 }
 
-.insta {
+.image-sidebar {
   width: 32px;
   height: 32px;
 }
 
 @media only screen and (max-width: 600px) {
-  .insta {
+  .image-sidebar {
     width: 20px;
     height: 20px;
   }
