@@ -8,7 +8,7 @@ class Releases extends Component {
 
     render(){
       return (
-          <div onPointerEnter={ ()=> this.props.handleNavBarHide()} className='release-page-wrappper'>
+          <div onTouchMove={ ()=> this.props.handleNavBarHide()} onPointerEnter={ ()=> this.props.handleNavBarHide()} className='release-page-wrappper'>
             <div className='release-page-title'>
               <h1 id='release-page-link'>-Freshest Beats-</h1>
             </div>
