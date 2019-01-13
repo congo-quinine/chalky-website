@@ -5,7 +5,7 @@ import Title from './Title.js'
 import SideBar from './sideBar.js'
 import Bio from './bio.js'
 import SideBarNav from './sideBarNav.js'
-import Merch from './merch.js'
+import Contact from './contact.js'
 import '../Styles/App.css';
 
 
@@ -47,7 +47,7 @@ class App extends Component {
         <Releases handleNavBarHide={this.handleNavBarHide} handleSideBarColorChange={this.handleSideBarColorChange} />
         <SideBar />
         <Bio handleNavBarHide={this.handleNavBarHide} handleSideBarColorChange={this.handleSideBarColorChange} />
-        <Merch />
+        <Contact />
       </div>
     );
   }

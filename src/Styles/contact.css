@@ -1,0 +1,11 @@
+.contact-page-wrapper{
+  height: 400px;
+}
+.contact-info{
+  text-align: center;
+}
+
+.contact-info > p {
+  margin-left: -5%;
+  text-align: center;
+}
