@@ -5,6 +5,7 @@ import Title from './Title.js'
 import SideBar from './sideBar.js'
 import Bio from './bio.js'
 import SideBarNav from './sideBarNav.js'
+import Merch from './merch.js'
 import '../Styles/App.css';
 
 
@@ -13,7 +14,9 @@ class App extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        leftHomePage: false
+        leftHomePage: false,
+        releasePage: false,
+        bioPage: false
       }
     }
     handleNavBarHide = () => {
@@ -26,18 +29,25 @@ class App extends Component {
         leftHomePage: false
       })
     }
+
+    handleSideBarColorChange = (event) => {
+
+    }
+
+
   render() {
     return (
       <div className="App">
         {
           this.state.leftHomePage
-          ? <SideBarNav />
+          ? <SideBarNav handleSideBarColorChange={this.state} />
           : <NavBar />
         }
-        <Title handleNavBarShow={this.handleNavBarShow}/>
-        <Releases handleNavBarHide={this.handleNavBarHide}/>
+        <Title handleNavBarShow={this.handleNavBarShow} handleSideBarColorChange={this.handleSideBarColorChange}/>
+        <Releases handleNavBarHide={this.handleNavBarHide} handleSideBarColorChange={this.handleSideBarColorChange} />
         <SideBar />
-        <Bio handleNavBarHide={this.handleNavBarHide}/>
+        <Bio handleNavBarHide={this.handleNavBarHide} handleSideBarColorChange={this.handleSideBarColorChange} />
+        <Merch />
       </div>
     );
   }

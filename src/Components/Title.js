@@ -17,10 +17,10 @@ class Title extends Component {
   handelChange = () => {
     if(this.state.pictureCounter >= pictureArray.length-1) {
        pictureCounter = 0
-       this.setState({pictureCounter})
+       this.setState({ pictureCounter })
      }
      pictureCounter++
-     this.setState({pictureCounter})
+     this.setState({ pictureCounter })
   }
 
   componentDidMount () {
@@ -29,7 +29,7 @@ class Title extends Component {
 
   render(){
     return (
-        <div id='title-page' className='title-page' onPointerEnter={ () => this.props.handleNavBarShow()}>
+        <div id='title-page' className='title-page' onPointerEnter={ () => this.props.handleNavBarShow()} onMouseEnter={(event) => this.props.handleSideBarColorChange(event)}>
         <div id='mobile-banner'>Chalky</div>
           <img className='title-image' src={pictureArray[pictureCounter]}/>
         </div>

@@ -4,11 +4,9 @@ import '../Styles/releasePage.css'
 
 class Releases extends Component {
 
-
-
     render(){
       return (
-          <div onTouchStart={ () => this.props.handleNavBarHide()}          onPointerEnter={ () => this.props.handleNavBarHide()} className='release-page-wrappper'>
+          <div onTouchStart={ () => this.props.handleNavBarHide()} onPointerEnter={ (event) => this.props.handleNavBarHide()} onMouseEnter={(event) => this.props.handleSideBarColorChange(event)} className='release-page-wrappper'>
             <div className='release-page-title'>
               <h1 id='release-page-link'>-Freshest Beats-</h1>
             </div>
