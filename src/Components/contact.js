@@ -6,7 +6,7 @@ class Contact extends Component {
   render(){
     return(
       <div className='contact-page-wrapper'>
-        <div className='contact-info'>
+        <div id='contact-info'>
           <h1>Contact Deets</h1>
             <p> Chalky Email: chalky@chalky.com </p>
             <p> Chalky Facebook: <a href="https://www.facebook.com/chalkywhitemusic" target='_blank'>

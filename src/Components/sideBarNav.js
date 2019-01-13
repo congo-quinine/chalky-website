@@ -17,25 +17,10 @@ class SideBarNav extends Component {
     <div>
       <div className="sideBarNav">
         <ul>
-          <a href="#title-page">
-          <li>Home</li>
-          </a>
-          {
-            this.props.handleSideBarColorChange.releasePage
-           ? <a href="#release-page-link"><li style={ colorStyle }>Releases</li></a>
-           : <a href="#release-page-link"><li>Releases</li></a>
-          }
-          {
-            this.props.handleSideBarColorChange.bioPage
-            ? <a href="#bio-text"><li style={ colorStyle }>Chalky</li></a>
-            : <a href="#bio-text"><li>Chalky</li></a>
-          }
-          <a href="" >
-          <li>Merch</li>
-          </a>
-          <a href="">
-          <li>Contact</li>
-          </a>
+          <a href="#title-page"><li>Home</li></a>
+           <a href="#release-page-link"><li>Releases</li></a>
+            <a href="#bio-section"><li>Chalky</li></a>
+          <a href="#contact-info"><li>Contact</li></a>
         </ul>
       </div>
     </div>

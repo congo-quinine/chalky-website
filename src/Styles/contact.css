@@ -1,11 +1,28 @@
 .contact-page-wrapper{
   height: 400px;
 }
-.contact-info{
+#contact-info{
   text-align: center;
 }
 
-.contact-info > p {
+#contact-info > p {
   margin-left: -5%;
   text-align: center;
+}
+@media only screen and (max-width: 600px) {
+
+  h4{
+    padding-left: 40%;
+  }
+
+  #bio-text {
+    padding-top: 25%;
+    margin-left: 22%;
+    width: 55%;
+  }
+  #bio-picture {
+    margin-left: 22%;
+    width: 60%;
+  }
+
 }
