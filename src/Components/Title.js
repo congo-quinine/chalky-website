@@ -7,12 +7,12 @@ class Title extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        pictureCounter: null
+        pictureCounter: 0
       }
     }
 
-  handelChange = () => {
-    if(this.state.pictureCounter >= pictureArray.length-1) {
+  handleChange = () => {
+    if(this.state.pictureCounter === pictureArray.length) {
        this.setState({
          pictureCounter: 0
        })
@@ -24,10 +24,7 @@ class Title extends Component {
   }
 
   componentDidMount () {
-    setInterval(() => this.handelChange(), 500);
-    this.setState({
-      pictureCounter: 0
-    })
+    setInterval(() => this.handleChange(), 400);
   }
 
   render(){
