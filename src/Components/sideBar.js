@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
       <div className="sidenav">
         <a href="#" target='_blank'>
-          <iframe className='image-sidebar' allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fchalkywhitemusic&color=orange_white&size=32">
+          <iframe className='image-sidebar' allowtransparency="true" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fchalkywhitemusic&color=orange_white&size=32">
           </iframe>
         </a>
         <a href="https://www.instagram.com/chalkyartist/" target='_blank'>
