@@ -4,8 +4,9 @@ import '../Styles/bio.css'
 class Bio extends Component {
 
     render(){
+      const bio = 'bio'
       return (
-        <div onPointerEnter={ () => this.props.handleNavBarHide()} onMouseEnter={(event) => this.props.handleSideBarColorChange(event)}>
+        <div onPointerEnter={ () => {this.props.handleNavBarHide(); this.props.handleNavSideBarChange(bio)}}>
         <div className='bio-picture-title'>
           <h4 id='bio-section'>Chalky White (UK)</h4>
             <img id='bio-picture' src='../Chalky.jpg'></img>

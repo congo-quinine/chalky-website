@@ -4,8 +4,9 @@ import '../Styles/contact.css'
 class Contact extends Component {
 
   render(){
+    const contact = 'contact'
     return(
-      <div className='contact-page-wrapper'>
+      <div className='contact-page-wrapper' onPointerEnter={ () => this.props.handleNavSideBarChange(contact)}>
         <div id='contact-info'>
           <h1>Contact Deets</h1>
             <p> Chalky Email: chalky@chalky.com </p>

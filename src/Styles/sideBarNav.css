@@ -15,4 +15,13 @@
 
 ul {
   list-style-type: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sideBarNav{
+    margin-left: 75%;
+    line-height: 20px;
+  }
 }
