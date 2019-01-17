@@ -22,9 +22,8 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .sideBarNav{
-    margin-left: 75%;
-    line-height: 20px;
-    font-size: 10px;
     margin-left: 70%;
+    line-height: 15px;
+    font-size: 10px !important;
   }
 }

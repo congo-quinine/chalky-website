@@ -43,4 +43,8 @@ h3{
   #bio-background{
     height: 800px;
   }
+  #bio-text{
+    font-size: 0.7rem;
+    letter-spacing: 0.4px;
+  }
 }

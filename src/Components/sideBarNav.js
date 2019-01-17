@@ -6,7 +6,7 @@ class SideBarNav extends Component {
   render(){
 
     const fontSize = {
-      fontSize: '20px',
+      fontSize: '18px',
     }
 
   return (

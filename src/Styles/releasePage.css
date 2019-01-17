@@ -47,18 +47,20 @@ h2{
 
 @media only screen and (max-width: 600px) {
   .albums > div {max-width: 50%;
-    padding-left: 10%;
+    padding-left: 12%;
   }
   h2{
-    padding-left: 8%;
     text-align: center;
     font-size: 0.8rem;
+    padding-left: 10%;
   }
   p{
-    font-size: 0.8rem;
+    width: 110%;
+    font-size: 0.7rem;
+    letter-spacing: 0.4px;
   }
   h5{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   iframe {
     height: 200px;
