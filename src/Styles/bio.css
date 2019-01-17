@@ -41,7 +41,12 @@ h3{
     display: none;
   }
   #bio-background{
-    height: 800px;
+    height: 900px;
+  }
+  #bio-picture{
+    width: 10%;
+    height: 10%;
+    margin-left: 20%;
   }
   #bio-text{
     font-size: 0.7rem;
