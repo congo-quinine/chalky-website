@@ -19,7 +19,7 @@ const SideBar = () => {
           <img className='image-sidebar'src='https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png'></img>
         </a>
         <a href="https://chalkywhiteartist.bandcamp.com/releases" target='_blank'>
-          <img className='image-sidebar'src='  https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandcamp-button-bc-circle-black.svg/2000px-Bandcamp-button-bc-circle-black.svg.png'></img>
+          <img className='image-sidebar'src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandcamp-button-bc-circle-black.svg/2000px-Bandcamp-button-bc-circle-black.svg.png'></img>
         </a>
       </div>
   );

@@ -1,8 +1,8 @@
 .release-page-wrappper {
-  background-color: #000000;
+  background-color: hsla(0, 0%, 3%, 1)
 }
 .release-page-title{
-  color: #e0e2e5;
+  color: hsla(0, 0%, 93%, 1);
   text-align: center;
   padding-top: 5%;
 }
@@ -38,10 +38,11 @@ iframe {
 p {
   width: 110%;
   padding-left: 0%;
-  letter-spacing: 0.5px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
 }
 h2{
-  text-align: center;
+  text-align: ;
 }
 
 @media only screen and (max-width: 600px) {

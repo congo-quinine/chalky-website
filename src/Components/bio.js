@@ -8,7 +8,7 @@ class Bio extends Component {
       return (
         <div onPointerEnter={ () => {this.props.handleNavBarHide(); this.props.handleNavSideBarChange(bio)}}>
         <div className='bio-picture-title'>
-          <h4 id='bio-section'>Chalky White (UK)</h4>
+          <h3 id='bio-section'>Chalky White (UK)</h3>
             <img id='bio-picture' src='../Chalky.jpg'></img>
           </div>
             <div id='bio-text'>

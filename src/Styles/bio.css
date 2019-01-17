@@ -1,6 +1,6 @@
-h4{
-  color: #e0e2e5;
-  padding-left: 45%;
+h3{
+  color: hsla(0, 0%, 93%, 1);
+  text-align: center;
 }
 .bio-picture-title{
   position: absolute;
@@ -13,10 +13,13 @@ h4{
   margin-bottom: 20%;
   margin-top: 25%;
   padding-top: 5%;
-  font-size: 1.1rem;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  font-size: 1rem;
+  font-weight: lighter;
   position: absolute;
   z-index: 1;
-  color: white;
+  color: hsla(0, 0%, 93%, 1);
   text-align: ;
 }
 #bio-picture {
@@ -24,7 +27,7 @@ h4{
   height: 30%;
   border-radius: 20%;
   margin-right: auto;
-  margin-left: 37%;
+  margin-left: 36%;
 }
 #bio-background{
   width: 100%;
