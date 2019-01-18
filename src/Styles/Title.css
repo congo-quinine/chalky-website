@@ -2,15 +2,19 @@
   background-color: #000000;
 }
 
+#mobile-banner{
+    display: none;
+}
 
+#animation-home{
+  width: 100%;
+  height: 90%;
+  background-color: black;
+}
 .title-image {
   width: 100%;
   height: 90%;
 }
-
-#mobile-banner{
-    display: none;
-  }
 
 @media only screen and (max-width: 600px) {
   .title-image {

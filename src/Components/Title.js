@@ -7,31 +7,36 @@ class Title extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        pictureCounter: 0
+        pictureCounter: 0,
+        timer: null
       }
     }
 
   handleChange = () => {
-    if(this.state.pictureCounter === pictureArray.length) {
-       this.setState({
-         pictureCounter: 0
-       })
+    if(this.state.pictureCounter < pictureArray.length -1) {
+      this.setState({
+        pictureCounter: this.state.pictureCounter + 1
+      })
      }else {
      this.setState({
-       pictureCounter: this.state.pictureCounter + 1
+       pictureCounter: 0
      })
    }
   }
 
   componentDidMount () {
-    setInterval(() => this.handleChange(), 400);
+    this.setState({
+      timer: setInterval(() => this.handleChange(), 400)
+    })
   }
 
   render(){
     return (
         <div id='title-page' className='title-page' onPointerEnter={ () => {this.props.handleNavBarShow(); this.props.handleNavSideBarChange()}}>
         <div id='mobile-banner'>Chalky</div>
-          <img className='title-image' src={pictureArray[this.state.pictureCounter]}/>
+        <div id='animation-home'>
+          <img className='title-image' src={pictureArray[this.state.pictureCounter]}></img>
+        </div>
         </div>
       );
     }
